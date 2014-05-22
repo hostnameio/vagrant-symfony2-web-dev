@@ -8,7 +8,7 @@ vagrantfile-local:
             private_network: 4.1.168.192
             public_network:
                 bridge:  'en1: Wi-Fi (AirPort)'
-                ip:  192.168.1.4
+                ip:  192.168.56.101
                 netmask:  255.255.255.0
             forwarded_port: {  }
         provider:
@@ -29,7 +29,7 @@ vagrantfile-local:
         synced_folder:
             workspace:
                 id: vagrant-root
-                source: ../
+                source: ~/
                 target: /var/www
                 nfs: 'true'
         usable_port_range: 2200..2250
